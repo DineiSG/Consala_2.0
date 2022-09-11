@@ -1,0 +1,76 @@
+@media (min-width:576px){
+    .formulario_de_acesso {
+      background-color: rgb(33, 88, 160);
+      text-align: center;
+      color:white;
+      padding: 20px 0px;
+      border-radius: 5px;
+      line-height: 30px;
+      box-shadow: 5px 5px black;
+      margin: 5%;
+    }
+    .menu {
+      text-align: center;
+      margin:30px 180px;
+      
+    }
+    .logo{
+        background-color:rgb(33, 88, 160) ;
+    }
+  
+  
+    @keyframes alter-form {
+      from {
+        background-color: rgb(46, 45, 45);
+        border-radius: 100px 100px;
+        padding: 0px;
+      }
+      to {
+        background-color: rgb(33, 88, 160);
+        
+      }
+    }
+   
+    div #folha,
+    #recisao,
+    #ponto,
+    #cadastro{
+      margin: 30px 95px;
+      padding: 50px;
+      border-radius: 3px;
+      background-color: rgb(33, 88, 160);
+      animation-name: alter-form;
+      animation-duration: 1s;
+      display:inline-block;
+      color:white;
+      font-weight: bold;
+      
+    }
+
+    div #opcoes :hover{
+       background-color: white;
+       color:black;
+       padding:30px;
+       border-radius: 5px;
+       transition:2s;
+       transition-delay:1s;
+       
+    }
+
+    div #cadastro{
+        padding: 50px 88px;
+        margin-top: 30px; 
+        margin-left:105px;
+        margin-right: 80px;
+    } 
+    div #ponto{
+        padding: 50px 58px;
+        margin: 30px 80px;
+    }
+   
+}
+
+
+
+
+  
