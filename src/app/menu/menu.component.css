@@ -1,21 +1,23 @@
 @media (min-width: 576px) {
-  .formulario_de_acesso {
-    background-color: rgb(33, 88, 160);
-    text-align: center;
-    color: white;
-    padding: 20px 0px;
-    border-radius: 5px;
-    line-height: 30px;
-    box-shadow: 5px 5px black;
-    margin: 5%;
-  }
+
   .menu {
     text-align: center;
-    margin: 30px 50px;
+    margin: 60px 10px;
+    box-shadow:0px 30px 1000px rgba(33, 88, 160);
+    padding-top: 20px;
+    padding-bottom: 20px;
+    padding-left:0;
+    padding-right:0;
   }
+  
+  /*Logo*/
+
   .logo {
     background-color: rgb(33, 88, 160);
+    position:relative
   }
+
+  /*Caixas*/
 
   @keyframes alter-form {
     from {
@@ -29,10 +31,10 @@
     }
   }
 
-  div #folha {
-    margin-top: 150px;
-    margin-right: 50px;
-    margin-left: 50px;
+  #folha {
+    margin-top: 100px;
+    margin-right: 0px;
+    margin-left: 0px;
     padding: 50px 60px;
     border-radius: 3px;
     background-color: rgb(33, 88, 160);
@@ -43,11 +45,11 @@
     font-weight: bold;
     text-align: center;
   }
-  div #cadastro {
+  #cadastro {
     padding: 50px 85px;
-    margin-top: 150px;
-    margin-left: 50px;
-    margin-right: 50px;
+    margin-top: 100px;
+    margin-left: 0px;
+    margin-right: 30px;
     border-radius: 3px;
     background-color: rgb(33, 88, 160);
     animation-name: alter-form;
@@ -56,11 +58,11 @@
     color: white;
     font-weight: bold;
   }
-  div #ponto {
+  #ponto {
     padding: 50px 58px;
-    margin-top: 150px;
-    margin-right: 50px;
-    margin-left: 50px;
+    margin-top: 100px;
+    margin-right: 30px;
+    margin-left: 30px;
     border-radius: 3px;
     background-color: rgb(33, 88, 160);
     animation-name: alter-form;
@@ -69,10 +71,10 @@
     color: white;
     font-weight: bold;
   }
-  div #recisao {
-    margin-top: 150px;
-    margin-right: 50px;
-    margin-left: 50px;
+  #recisao {
+    margin-top: 100px;
+    margin-right: 0px;
+    margin-left: 30px;
     padding: 50px 50px;
     border-radius: 3px;
     background-color: rgb(33, 88, 160);
@@ -83,9 +85,25 @@
     font-weight: bold;
     text-align: center;
   }
-
+  /*Texto principal*/
   div h1{
-    margin-top: 100px;
+    margin-top:20px ;
+    padding-bottom:20px;
+  }
+  /*Botoes*/
+  #config{
+    padding:10px 10px;
+    border:rgb(33, 88, 160);
+    background-color: rgb(33, 88, 160) ;
+    position: fixed;
+    left:1220px;
+  }
+  #logof{
+    padding:10px 10px;
+    border:rgb(33, 88, 160);
+    background-color: rgb(33, 88, 160) ;
+    position: fixed;
+    left:1180px;
   }
 
 }
