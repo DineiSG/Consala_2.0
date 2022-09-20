@@ -1,0 +1,28 @@
+@media (min-width:576px){
+    .logo {
+        background-color: rgb(33, 88, 160);
+        position:relative
+      }
+
+      #config{
+        padding:10px 10px;
+        border:rgb(33, 88, 160);
+        background-color: rgb(33, 88, 160) ;
+        position: fixed;
+        left:85rem;
+      }
+      #logof{
+        padding:10px 10px;
+        border:rgb(33, 88, 160);
+        background-color: rgb(33, 88, 160) ;
+        position: fixed;
+        left:80rem;
+      }
+      .needs-validation{
+        margin-top: 10px;
+        margin-left: 35%;
+        line-height: 35px;
+        display: flexbox;
+      
+      }
+}
