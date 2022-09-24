@@ -6,16 +6,22 @@ import { TelaLoginComponent } from './tela-login/tela-login.component';
 import { MenuComponent } from './menu/menu.component';
 import { CadastroComponent } from './cadastro/cadastro.component';
 
+import { FormsModule } from '@angular/forms';
+
 @NgModule({
   declarations: [
     AppComponent,
     TelaLoginComponent,
     MenuComponent,
-    CadastroComponent
+    CadastroComponent,
+    
+
   ],
   imports: [
     BrowserModule, 
-    AppRoutingModule
+    AppRoutingModule,
+    FormsModule,
+   
   ],
   providers: [],
   bootstrap: [AppComponent]

@@ -1,5 +1,5 @@
 @media (min-width:576px){
-    .logo {
+    .cabeçalho {
         background-color: rgb(33, 88, 160);
         position:relative
       }
@@ -8,21 +8,92 @@
         padding:10px 10px;
         border:rgb(33, 88, 160);
         background-color: rgb(33, 88, 160) ;
-        position: fixed;
-        left:85rem;
+        position:absolute;
+        left:83rem;
       }
+
       #logof{
         padding:10px 10px;
         border:rgb(33, 88, 160);
         background-color: rgb(33, 88, 160) ;
-        position: fixed;
+        position: absolute;
         left:80rem;
+        display: inline;
       }
-      .needs-validation{
-        margin-top: 10px;
-        margin-left: 35%;
-        line-height: 35px;
-        display: flexbox;
       
+      /* Cadastro */
+      .dados_colaborador{
+        background-color: white;
+        margin-top: 10px;
+        margin-left: 10px;
+        margin-right:10px;
+        line-height: 35px;
+        font-weight: bold;
+        padding: 15px;  
+        border:1px solid rgb(240, 233, 233);
+        border-radius: 5px;  
+        box-shadow:0px 20px 800px rgba(33, 88, 160);
+      }
+      
+      /*Informações inseridas*/
+      .dados_informados{
+        background-color: white;
+        margin-top: 50px;
+        margin-bottom: 50px;
+        margin-left: 10px;
+        margin-right:10px;
+        line-height: 35px;
+        padding: 15px;  
+        border:1px solid rgb(240, 233, 233);
+        border-radius: 5px;
+        box-shadow:0px 20px 50px rgba(33, 88, 160);
+
+      }
+      #dados_necessarios{
+        font-weight: bold;
+      }
+
+      .form-check{
+        margin-left: 40% ;
+        line-height: 35px;
+      }
+      #flexCheckDefault{
+        width: 20px;
+        height: 20px;
+        margin-right:10px;
+        margin-bottom: 30px;
+      }
+
+      /* Animaçao de criação dos botoes */
+      
+      @keyframes expandir {
+        from{
+          margin: 2px;
+          gap:2px;
+          display:flex;
+          
+        }
+        to{
+          margin-top:90px;  
+          margin-bottom:50;
+          display: flex;
+          gap:20px;
+        }
+        
+      }
+      #buttons{
+      margin-top:30px;  
+      margin-bottom:20px;
+      display: flex;
+      gap:20px;
+      justify-content:right;
+      animation-name: expandir;
+      animation-duration: 1s;
+      animation-direction: normal;
+      
+      }
+      #buttons :hover{
+        background-color: white;
+        color: black
       }
 }

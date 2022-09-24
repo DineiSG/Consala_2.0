@@ -3,11 +3,12 @@ import { RouterModule, Routes } from "@angular/router";
 
 import { MenuComponent } from "./menu/menu.component";
 import { TelaLoginComponent } from "./tela-login/tela-login.component";
-
+import { CadastroComponent } from "./cadastro/cadastro.component";
 
 const routes: Routes=[
     {path:'' , component:TelaLoginComponent},
-    {path:'menu', component:MenuComponent }
+    {path:'menu', component:MenuComponent },
+    {path:'cadastro',component:CadastroComponent}
 ]
 
 @NgModule({

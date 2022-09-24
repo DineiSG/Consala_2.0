@@ -12,71 +12,117 @@
     <title>Consala</title>
   </head>
   <body>
-    <div class="logo">
-      <img src=".\assets\consala logo.png" alt="Consala" width="200px" />
-      <a href=""
-        ><button type="submit" id="config">
-          <img
-            src="\assets\controles-deslizantes-de-configuracoes.svg"
-            alt="Configurações"
-            title="Configurações"
-            height="20"
-          /></button
-      ></a>
-      <a href=""
-        ><button type="submit" id="logof">
-          <img
-            src="\assets\usuario.svg"
-            alt="logof"
-            title="Logof"
-            height="20"
-          /></button
-      ></a>
-    </div>
+      <div class="cabeçalho">
+        <img src=".\assets\consala logo.png" alt="Consala" width="200px" />
+        <a href=""
+          ><button type="submit" id="config">
+            <img
+              src="\assets\controles-deslizantes-de-configuracoes.svg"
+              alt="Configurações"
+              title="Configurações"
+              height="20"
+            /></button
+        ></a>
+        <a href=""
+          ><button type="submit" id="logof">
+            <img
+              src="\assets\usuario.svg"
+              alt="logof"
+              title="Logof"
+              height="20"
+            /></button
+        ></a>
+      </div>
     <br />
-    <form class="needs-validation">
-      <div class="col-md-6 mb-3">
-        <label for="validationCustom02">Nome Completo</label>
-        <input type="text" class="form-control" id="name" placeholder="Nome Completo" value="" required>
-        <div class="valid-feedback">
-          Tudo certo!
-        </div>
-      </div>
-      <div class="form-row">
-        <div class="col-md-3 mb-3">
-          <label for="validationCustom02">Função</label>
-          <input type="text" class="form-control" id="funcao" placeholder="Função" value="" required>
-          <div class="valid-feedback">
-            Tudo certo!
+    <div class="informacoes">
+        <form class="dados_colaborador">
+          <h1>Cadastro de Novo Colaborador</h1>
+          <div class="col-md-3 mb-3">
+            <label for="validationCustom02">Nome Completo</label>
+            <input type="text" [(ngModel)]="nome" name="Nome" class="form-control" id="name" placeholder="Nome Completo" value="" required>
+            <div class="valid-feedback">
+              Tudo certo!
+            </div>
           </div>
-        </div>
-        <div class="col-md-3 mb-3">
-          <label for="validationCustom02">Setor</label>
-          <input type="text" class="form-control" id="setor" placeholder="Setor" value="" required>
-          <div class="valid-feedback">
-            Tudo certo!
+          <div class="col-md-3 mb-3">
+            <label for="validationCustom02">CPF</label>
+            <input type="text" [(ngModel)]="cpf" name="CPF" class="form-control" id="cpf" maxlength="14" placeholder="CPF" value="" required>
+            <div class="valid-feedback">
+              Tudo certo!
+            </div>
           </div>
-        </div>
-        <div class="col-md-2 mb-3">
-          <label for="validationCustom01">Remuneração R$</label>
-          <input type="text" class="form-control" id="remuneracao" placeholder="Remuneração" value="" required>
-        </div>
-        <div class="valid-feedback">
-          Tudo certo!
-        </div>
-        <div class="col-md-3 mb-3">
-          <label for="validationCustom02">Matricula</label>
-          <input type="text" class="form-control" id="matricula" placeholder="Matricula" value="" required>
-          <div class="valid-feedback">
-            Tudo certo!
-          </div>
-        </div>
-        
           
-      
-      </div>
-      <button class="btn btn-primary" type="submit">Enviar</button>
-    </form>
+            <div class="col-md-3 mb-3">
+              <label for="validationCustom02">Função</label>
+              <input type="text" [(ngModel)]="funcao" name="Função" class="form-control" id="funcao" placeholder="Função" value="" required>
+              <div class="valid-feedback">
+                Tudo certo!
+              </div>
+            </div>
+            <div class="col-md-3 mb-3">
+              <label for="validationCustom02">Setor</label>
+              <input type="text" [(ngModel)]="setor" name="Setor"class="form-control" id="setor" placeholder="Setor" value="" required>
+              <div class="valid-feedback">
+                Tudo certo!
+              </div>
+            </div>
+            <div class="col-md-2 mb-3">
+              <label for="validationCustom01">Salario R$</label>
+              <input type="text" [(ngModel)]="remuneracao" name="salario" class="form-control" id="remuneracao" placeholder="Salario" value="" required>
+            </div>
+            <div class="valid-feedback">
+              Tudo certo!
+            </div>
+            <div class="col-md-2 mb-3">
+              <label for="validationCustom02">Matricula</label>
+              <input type="text" [(ngModel)]="matricula" name="Matricula"class="form-control" id="matricula" placeholder="Matricula" value="" required>
+              <div class="valid-feedback">
+                Tudo certo!
+              </div>
+            </div>
+            
+        </form>
+        <br>
+          
+
+    </div>     
+    <div class="dados_informados" >
+            <h1>Dados Informados</h1>
+            <table class="cadastro">
+              <td id="dados">
+                <tr id="dados_necessarios">Nome:</tr>
+                <tr id="dados_necessarios">CPF:</tr>
+                <tr id="dados_necessarios">Função:</tr>
+                <tr id="dados_necessarios">Setor:</tr>
+                <tr id="dados_necessarios">Salario:</tr>
+                <tr id="dados_necessarios">Matricula: </tr>
+              </td>
+              <td id="informacoes">
+                <tr id="dados_informados">{{nome}}</tr>
+                <tr id="dados_informados">{{cpf}}</tr>
+                <tr id="dados_informados">{{funcao}}</tr>
+                <tr id="dados_informados">{{setor}}</tr>
+                <tr id="dados_informados">{{remuneracao}}</tr>
+                <tr id="dados_informados">{{matricula}}</tr>
+                </td>
+              </table>
+                <br>
+              <div class="form-check">
+                <input class="form-check-input" [(ngModel)]='ok' name='ok' type="checkbox" value="" id="flexCheckDefault">
+                <label class="form-check-label" for="flexCheckDefault">
+                  Todas as informações estão corretas
+                </label>
+              </div>
+              <div id="buttons" *ngIf="ok">  
+              <button class="btn btn-primary" type="submit" id="salvar">Salvar</button>  
+              <button class="btn btn-primary" type="submit" id="excluir">Excluir</button>
+            </div> 
+            </div>
+            
+             
+
+            
+           
     
   </body>
 </html>
